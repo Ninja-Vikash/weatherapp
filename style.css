@@ -1,0 +1,126 @@
+* {
+  margin : 0;
+  padding : 0;
+  box-sizing : border-box;
+  font-family : 'Poppins';
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* ------------ #main -------------- */
+#main {
+    height: 100vh;
+    width: 100%;
+    background: url("https://images.unsplash.com/photo-1507327160427-b29d8a92f971?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    object-fit: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* ------------- screen ------------ */
+#screen {
+    padding: 60px 0px 140px 100px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#screen h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.weather-area {
+    display: flex;
+    align-items: end;
+    gap: 20px;
+}
+.weather-area #temp {
+    color: white;
+    font-size: 96px;
+    font-weight: 500;
+    line-height: 0.9;
+}
+.weather-area #location h3 {
+    color: white;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.weather-area #location p {
+    color: #ddd;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#weather-icon i {
+    font-size: 84px;
+    color: white;
+}
+
+/* ----------- aside --------------- */
+aside {
+    padding: 50px 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 35%;
+    background: rgba(0, 0, 0, 0.30);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+#search {
+    height: 30px;
+    width: 90%;
+    display: flex;
+    align-items: end;
+}
+#search input {
+    flex-grow: 1;
+    padding: 10px 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+#search button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 80px;
+    width: 80px;
+    color: white;
+    font-size: 28px;
+    background-color: rgb(24, 213, 255);
+    border: none;
+    cursor: pointer;
+}
+
+#details {
+    padding: 40px 0px;
+}
+#details h2 {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+#details > p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 6px;
+}
