@@ -37,7 +37,7 @@ searchBtn.addEventListener("click", () => {
       const result = await response.json();
 
       temperature.innerHTML =
-        Math.floor(result.current_observation.condition.temperature) + `&deg;`;
+        Math.floor(result.current_observation.condition.temperature) + `&deg; F`;
       city.innerHTML = result.location.city;
       direction.innerHTML = result.current_observation.wind.direction;
       wind.innerHTML = result.current_observation.wind.speed + ` kpH`;
