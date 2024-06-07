@@ -85,7 +85,7 @@ body {
 }
 @media screen and (max-width: 740px) {
     #screen {
-        padding: 60px 0px 0px 80px;
+        padding: 40px 0px 0px 80px;
         justify-content: start;
         gap: 50px;
     }
@@ -124,7 +124,7 @@ body {
 
 @media screen and (max-width: 900px) {
     .weather-area {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: start;
         gap: 10px;
     }
@@ -136,7 +136,8 @@ body {
     .weather-area #location p {
         margin-top : 10px;
         font-size: 16px;
-        color: #222;
+        font-weight: 700;
+        color: #fff;
     }
 }
 
@@ -167,7 +168,7 @@ aside {
         padding: 50px 80px;
         min-width: 100%;
         left: 0%;
-        top: 400px;
+        top: 360px;
     }
 }
 
@@ -251,4 +252,3 @@ aside {
         font-size: 16px;
     }
 }
-
